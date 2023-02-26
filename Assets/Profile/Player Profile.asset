@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5658ff1d85720494ca7fbaa94056079f, type: 3}
+  m_Name: Player Profile
+  m_EditorClassIdentifier: 
+  baseHealth: 10
+  levelHealth: 2
+  baseSpeed: 5
+  levelSpeed: 1
+  baseActionCooldown: 1
+  levelActionCooldown: 0.2
+  baseActionDamage: 1
+  levelActionDamage: 0.2
+  basePaperCount: 0
+  levelPaperCount: 1
+  paperBulletSpeed: 25
+  paperDamage: 1
+  baseWallBounce: 0
+  levelWallBounce: 1
+  briefSpeed: 25
+  briefDamage: 1
+  baseGasRange: 1.2
+  levelGasRange: 0.3
+  gasSpeed: 1000
+  gasTime: 5
+  gasDamage: 1
+  baseScytheSpeed: 2
+  levelScytheSpeed: 0.5
+  scytheRange: 3
+  scytheDamage: 1
+  scytheDuration: 5
+  baseBrickKnockback: 800
+  levelBrickKnockback: 200
+  brickForce: 500
+  brickDamage: 2

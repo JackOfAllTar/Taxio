@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7897161430952632414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7897161430952632415}
+  - component: {fileID: 7897161430952632413}
+  - component: {fileID: 7897161430952632412}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7897161430952632415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7897161430952632414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7897161430952632413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7897161430952632414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e556b0796e4cc488a057c21ddbf2e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Map1
+  playScene:
+    m_Handle: 0
+  boardController: {fileID: 7897161430952632412}
+  currentStage: 1
+  maxStage: 10
+  shopMax: 4
+  expMultiply: 5
+  playerLevel: 1
+  maxExp: 0
+  currentExp: 0
+  coins: 0
+  currentHealth: 0
+  maxUpgradeCount: 4
+  stageMultiply: 1000
+  levelMultiply: 100
+  coinMultiply: 1
+  winBonus: 500
+--- !u!114 &7897161430952632412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7897161430952632414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bbfa01ff4550dd45bab630aae49341c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardWidth: 20
+  boardLength: 30
+  spawnOffset: 1
+  obstacleObject:
+  - {fileID: 7800007549353062516, guid: 6129621c89a382a42bc0552d769bf499, type: 3}
+  - {fileID: 5245186114064807396, guid: 7caad85b282b37944b3688b50a0ef0f0, type: 3}
+  - {fileID: 5076467335915091416, guid: adacda699392e0f4bbce99d363dceaa2, type: 3}
+  playerTag: Player
+  spawnTag: Respawn
+  obstacleTag: Obstacle
+  baseEnemyCount: 1
+  enemySpawnerPrefab: {fileID: 7277931828787743669, guid: 6105d03d04b67d7498b728d3620d3c11, type: 3}
+  enemySpawnDelay: 1.5
+  bossPrefab: {fileID: 5152165273555537890, guid: 0317771bf4f48ed4db10edd138e0b5ed, type: 3}
+  exitTag: Finish
+  exitLight: {fileID: 6435776134345385382, guid: 35b8f1a8e3f3e704aa363dacd8ca766c, type: 3}
+  shopPrefab: {fileID: 4757220362835802532, guid: 18517923fe9f3cc4c8dd6ad9f481dc87, type: 3}
